@@ -158,9 +158,10 @@ app.get('/api/status', async (req, res) => {
     }
 });
 
-// Iniciar el servidor
-initializeServer();
+// Iniciar el servidor solo en desarrollo local
+if (process.env.NODE_ENV !== 'production') {
+    initializeServer();
+}
 
-app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
-});
+// Exportar la app para Vercel
+module.exports = app;
