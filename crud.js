@@ -59,7 +59,7 @@ async function loadProductos() {
                 <td>${producto.IdProducto}</td>
                 <td>${producto.NombreProducto}</td>
                 <td>${producto.Proveedor}</td>
-                <td>${producto.Categoría}</td>
+                <td>${producto.Categoria}</td>
                 <td>${producto.PrecioUnidad}</td>
                 <td>${producto.UnidadesEnExistencia}</td>
                 <td class="action-buttons">
@@ -105,7 +105,7 @@ async function editarProducto(id) {
         document.getElementById('idProducto').value = producto.IdProducto;
         document.getElementById('nombreProducto').value = producto.NombreProducto;
         document.getElementById('proveedor').value = producto.Proveedor;
-        document.getElementById('categoria').value = producto.Categoría;
+        document.getElementById('categoria').value = producto.Categoria;
         document.getElementById('cantidadPorUnidad').value = producto.CantidadPorUnidad;
         document.getElementById('precioUnidad').value = producto.PrecioUnidad;
         document.getElementById('unidadesEnExistencia').value = producto.UnidadesEnExistencia;
